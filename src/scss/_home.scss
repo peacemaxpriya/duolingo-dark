@@ -1,11 +1,14 @@
-body {
-	background: url(../img/home-page.jpg) center no-repeat;
+.wrapper {
+	background: url(../img/home-page.jpg) center center no-repeat;
 	background-size: cover;
+	width: 100%;
+	height: 100%;
+	position: fixed;
 }
 
 header {
 	width: 100%;
-	margin: 20px auto;
+	padding: 20px auto;
 	text-align: center;
 
 	img {
@@ -52,7 +55,6 @@ header {
 		margin: 20px 80px;
 	}
 }
-
 
 
 
