@@ -1,0 +1,67 @@
+body {
+	background: url(../img/home-page.jpg) center no-repeat;
+	background-size: cover;
+}
+
+header {
+	width: 100%;
+	margin: 20px auto;
+	text-align: center;
+
+	img {
+		width: 180px;
+		margin: 30px 0;
+	}
+}
+
+.main-writeup {
+	width: 100%;
+	text-align: center;
+	font-family: 'Chelsea Market', cursive;
+	position: absolute;
+	bottom: -100px;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+	h1 {
+		color: #aaa;
+		font-size: 1.4em;
+		padding: 10px 20px;
+	}
+
+	p {
+		color: #373b47;
+		font-size: 1em;
+		line-height: 1.4em;
+		padding: 10px 20px;
+	}
+
+	a {
+		text-decoration: none;
+		color: #fff;
+	}
+
+	a:hover {
+		color: #f29322;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	header {
+		text-align: left;
+		margin: 20px 80px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
