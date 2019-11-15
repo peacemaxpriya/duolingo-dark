@@ -1,5 +1,8 @@
 console.log('Hello World.')
 
+let nextButton = document.querySelector('.next')
+nextButton.style.display = 'none'
+
 let italianSwearWords = [
 	{
 		question: 'I hope you mangia merde e morte!',
@@ -49,11 +52,8 @@ document.querySelector('button').onclick = function() {
 	document.querySelector('button').disabled = true
 	document.querySelector('button:nth-child(2)').disabled = true
 	document.querySelector('button:nth-child(3)').disabled = true
-
-	let nextButton = document.createElement('div')
-	nextButton.innerText = 'Next'
-	document.querySelector('.learn-to-swear').appendChild(nextButton)
-	nextButton.setAttribute('class', 'next')
+	
+	nextButton.style.display = 'block'
 }
 
 document.querySelector('button:nth-child(2)').onclick = function() {
@@ -66,6 +66,8 @@ document.querySelector('button:nth-child(2)').onclick = function() {
 	owlSwears.innerText = 'You couldn\'t get it right? ' +  italianSwearWords[0].answers[0] 
 	document.querySelector('.learn-to-swear').appendChild(owlSwears)
 	owlSwears.setAttribute('class', 'owl-swears')
+
+	nextButton.style.display = 'block'
 }
 
 document.querySelector('button:nth-child(3)').onclick = function() {
@@ -78,7 +80,10 @@ document.querySelector('button:nth-child(3)').onclick = function() {
 	owlSwears.innerText = 'You couldn\'t get it right? ' +  italianSwearWords[0].answers[0] 
 	document.querySelector('.learn-to-swear').appendChild(owlSwears)
 	owlSwears.setAttribute('class', 'owl-swears')
+
+	nextButton.style.display = 'block'
 }
+
 
 
 
