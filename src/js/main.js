@@ -36,20 +36,6 @@ let italianSwearWords = [
 		},
 		correct: 'c',
 	},
-	// {	
-	// 	question: 'faccia di culo',
-	// 	translation: 'your face looks like your bottom',
-	// },
-	// {	
-	// 	question: 'ti corro in culo',
-	// 	translation: 'forget it',
-	// 	literal: 'I run into your ass',
-	// },
-	// {	
-	// 	question: 'porco cane',
-	// 	translation: 'for God\'s sake',
-	// 	literal: 'pig dog',
-	// },
 ]
 
 // japanese quiz array 
@@ -74,11 +60,58 @@ let japaneseSwearWords = [
 	},
 ]
 
+// german quiz array 
+let germanSwearWords = [
+	{
+		question: 'You\'re such a drscksnest!',
+		answers: {
+			a: 'armpit of the universe', // correct
+			b: 'pair of sweaty balls',
+			c: 'dickhead', 
+		},
+		correct: 'a',
+	},
+	{	
+		question: 'Stop bothering me. Verpiss dich!',
+		answers: {
+			a: 'die in a ditch',
+			b: 'suck a dick',
+			c: 'piss off', // correct
+		},
+		correct: 'c',
+	},
+]
+
+// chinese quiz array 
+let chineseSwearWords = [
+	{
+		question: 'You can\'t be any more Èr bǎi wǔ than you already are.',
+		answers: {
+			a: '420',
+			b: '250', // correct
+			c: 'fugly',
+		},
+		correct: 'b',
+	},
+	{	
+		question: 'cào nǐ zǔzōng shíbā dài',
+		answers: {
+			a: 'kiss an elephant\'s ass',
+			b: 'take your shit and shove it in your face',
+			c: 'fuck your ancestors to an innumerable generation', // correct
+		},
+		correct: 'c',
+	},
+]
 
 // generic code for the quiz
 let options = document.querySelector('.options')
 let question = document.querySelector('.question')
 let currentQuestion = 0
+
+// swearing owl div
+let swearingOwl = document.createElement('div')
+document.querySelector('.learn-to-swear').appendChild(swearingOwl)
 
 let quiz = function(swearWords) {
 	question.innerText = swearWords[currentQuestion].question
@@ -87,15 +120,14 @@ let quiz = function(swearWords) {
 		eachOption.innerText = swearWords[currentQuestion].answers[option]
 		options.appendChild(eachOption)
 		eachOption.setAttribute('id', option)
-		console.log(eachOption.id)
 
 		eachOption.addEventListener('click', function() {
-			if (eachOption.id === (swearWords[currentQuestion].correct)) {
-				eachOption.setAttribute('id', 'right')
-				document.querySelector('#right').style.backgroundColor = 'green'
-			} else {
+			if (eachOption.id !== (swearWords[currentQuestion].correct)) {
 				eachOption.setAttribute('class', 'wrong')
 				document.querySelector('.wrong').style.backgroundColor = 'red'
+			} else {
+				eachOption.setAttribute('id', 'right')
+				document.querySelector('#right').style.backgroundColor = 'green'
 			}
 			nextButton.style.display = 'block'
 			nextButton.style.backgroundColor = '#fff'
@@ -106,13 +138,12 @@ let quiz = function(swearWords) {
 // go to the next question
 let nextQuestion = function(swearWords) {
 	nextButton.addEventListener('click', function() {
-		question.innerText = ' '
 		options.innerHTML = ' '
 
 		currentQuestion += 1
 
 		if (currentQuestion === 2) {
-			document.querySelector('.learn-to-swear').innerHTML = 'Great Job'
+			document.querySelector('.learn-to-swear').innerHTML = 'Quiz Over'
 		} else {
 			quiz(swearWords)
 		}
@@ -122,14 +153,18 @@ let nextQuestion = function(swearWords) {
 
 // get the quiz to start and go to the next question
 if (document.cookie.includes('language=italian')) {
-	console.log('Welcome to italian.')
 	quiz(italianSwearWords)
 	nextQuestion(italianSwearWords)
 } else if (document.cookie.includes('language=japanese')) {
-	console.log('Welcome to japanese.')
 	quiz(japaneseSwearWords)
 	nextQuestion(japaneseSwearWords)	
-}
+} else if (document.cookie.includes('language=german')) {
+	quiz(germanSwearWords)
+	nextQuestion(germanSwearWords)	
+} else if (document.cookie.includes('language=chinese')) {
+	quiz(chineseSwearWords)
+	nextQuestion(chineseSwearWords)	
+} 
 
 
 
