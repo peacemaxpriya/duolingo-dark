@@ -68,17 +68,18 @@ let italianQuiz = function() {
 		options.appendChild(eachOption)
 		eachOption.setAttribute('id', option)
 		console.log(eachOption.id)
-		console.log(document.querySelector('button > id'))
 		
 		eachOption.addEventListener('click', function() {
 			if (eachOption.id === (italianSwearWords[currentQuestion].correct)) {
-				console.log('yay')
+				eachOption.setAttribute('id', 'right')
+				document.querySelector('#right').style.backgroundColor = 'green'
 			} else {
-				document.querySelector('button').style.backgroundColor = 'red'
+				eachOption.setAttribute('class', 'wrong')
+				document.querySelector('.wrong').style.backgroundColor = 'red'
 			}
 			// nextButton.style.display = 'block'
 			// nextButton.style.backgroundColor = '#fff'
-		})	
+		})
 	}
 }
 
