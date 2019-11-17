@@ -1,24 +1,44 @@
 console.log('Hello World.')
 
-let nextButton = document.querySelector('.next')
-nextButton.style.display = 'none'
+// cookie connection
+let languageButtons = document.querySelectorAll('.language')
+languageButtons.forEach(function(languageButton) {
+	languageButton.addEventListener('click', function() {
+		console.log('lang picked', this.dataset.language)
+		document.cookie = 'language=' + this.dataset.language
+		document.location = 'swearing.html'
+	})
+}) 
 
+// cookie check for italian
+if (document.cookie.includes('language=italian')) {
+	console.log('Welcome to italian.')
+}
+
+// hide next button until called
+// let nextButton = document.querySelector('.next')
+// nextButton.style.display = 'none'
+
+
+// italian quiz
 let italianSwearWords = [
 	{
 		question: 'I hope you mangia merde e morte!',
-		answers: [
-			'eat shit and die', // correct
-			'break your bones',
-			'grow a new brain some day',
-		],
+		answers: {
+			a: 'eat shit and die', // correct
+			b: 'break your bones',
+			c: 'grow a new brain',
+		},
+		correct: 'a',
 	},
 	{	
 		question: 'Why don\'t you vaffanculo?',
-		answers: [
-			'piss off',
-			'go to hell',
-			'go fuck yourself', // correct
-		]
+		answers: {
+			a: 'piss off',
+			b: 'go to hell',
+			c: 'go fuck yourself', // correct
+		},
+		correct: 'c',
 	},
 	// {	
 	// 	question: 'faccia di culo',
@@ -38,51 +58,33 @@ let italianSwearWords = [
 
 let options = document.querySelector('.options')
 let question = document.querySelector('.question')
+let currentQuestion = 0
 
-question.innerText = italianSwearWords[0].question
-
-for (let option in italianSwearWords[0].answers) {
-	let eachOption = document.createElement('button')
-	eachOption.innerText = italianSwearWords[0].answers[option]
-	options.appendChild(eachOption)
+let italianQuiz = function() {
+	question.innerText = italianSwearWords[currentQuestion].question
+	for (let option in italianSwearWords[currentQuestion].answers) {
+		let eachOption = document.createElement('button')
+		eachOption.innerText = italianSwearWords[currentQuestion].answers[option]
+		options.appendChild(eachOption)
+		eachOption.setAttribute('id', option)
+		console.log(eachOption.id)
+		console.log(document.querySelector('button > id'))
+		
+		eachOption.addEventListener('click', function() {
+			if (eachOption.id === (italianSwearWords[currentQuestion].correct)) {
+				console.log('yay')
+			} else {
+				document.querySelector('button').style.backgroundColor = 'red'
+			}
+			// nextButton.style.display = 'block'
+			// nextButton.style.backgroundColor = '#fff'
+		})	
+	}
 }
 
-document.querySelector('button').onclick = function() {
-	document.querySelector('button').style.backgroundColor = 'green'
-	document.querySelector('button').disabled = true
-	document.querySelector('button:nth-child(2)').disabled = true
-	document.querySelector('button:nth-child(3)').disabled = true
-	
-	nextButton.style.display = 'block'
-}
+italianQuiz()
 
-document.querySelector('button:nth-child(2)').onclick = function() {
-	document.querySelector('button:nth-child(2)').style.backgroundColor = 'red'
-	document.querySelector('button').disabled = true
-	document.querySelector('button:nth-child(2)').disabled = true
-	document.querySelector('button:nth-child(3)').disabled = true
 
-	let owlSwears = document.createElement('div')
-	owlSwears.innerText = 'You couldn\'t get it right? ' +  italianSwearWords[0].answers[0] 
-	document.querySelector('.learn-to-swear').appendChild(owlSwears)
-	owlSwears.setAttribute('class', 'owl-swears')
-
-	nextButton.style.display = 'block'
-}
-
-document.querySelector('button:nth-child(3)').onclick = function() {
-	document.querySelector('button:nth-child(3)').style.backgroundColor = 'red'
-	document.querySelector('button').disabled = true
-	document.querySelector('button:nth-child(2)').disabled = true
-	document.querySelector('button:nth-child(3)').disabled = true
-
-	let owlSwears = document.createElement('div')
-	owlSwears.innerText = 'You couldn\'t get it right? ' +  italianSwearWords[0].answers[0] 
-	document.querySelector('.learn-to-swear').appendChild(owlSwears)
-	owlSwears.setAttribute('class', 'owl-swears')
-
-	nextButton.style.display = 'block'
-}
 
 
 

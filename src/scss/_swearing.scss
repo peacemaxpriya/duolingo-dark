@@ -38,7 +38,6 @@ h2 {
 
 	button:hover {
 		background-color: #f29322;
-		color: #fff;
 	}
 }
 
@@ -52,19 +51,12 @@ h2 {
 	padding: 15px;
 	margin: 40px auto;
 	outline: none;
-
-	a {
-		text-decoration: none;
-		color: #000;
-	}
+	text-decoration: none;
+	color: #000;
 }
 
 .next:hover {
 	background-color: #f29322;
-	
-	a {
-		color: #fff;
-	}
 }
 
 
