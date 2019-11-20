@@ -35,6 +35,33 @@ let italianSwearWords = [
 		},
 		correct: 'c',
 	},
+	{	
+		question: 'Faccia di culo',
+		answers: {
+			a: 'your face looks like your butt', // correct
+			b: 'shut your fucking face', 
+			c: 'you face look like a cow\'s face',
+		},
+		correct: 'a',
+	},
+	{	
+		question: 'Ti corro in culo',
+		answers: {
+			a: 'you\'re a shitface',
+			b: 'you look like shit',
+			c: 'i run into your ass', // correct
+		},
+		correct: 'c',
+	},
+	{	
+		question: 'Porco cane',
+		answers: {
+			a: 'pig\'s shit',
+			b: 'pig dog', // correct
+			c: 'dog dick',
+		},
+		correct: 'b',
+	},
 ]
 
 // japanese quiz array 
@@ -56,6 +83,33 @@ let japaneseSwearWords = [
 			c: 'go eat ramen',
 		},
 		correct: 'b',
+	},
+	{	
+		question: 'Kuso kurae',
+		answers: {
+			a: 'fuck a donkey',
+			b: 'eat shit', // correct
+			c: 'piss off',
+		},
+		correct: 'b',
+	},
+	{	
+		question: 'fuzakeru na',
+		answers: {
+			a: 'fuck off',  // correct
+			b: 'suck a dick',
+			c: 'fuck face',
+		},
+		correct: 'a',
+	},
+	{	
+		question: 'shinjimae',
+		answers: {
+			a: 'shithead',
+			b: 'dumbass',
+			c: 'go to hell', // correct
+		},
+		correct: 'c',
 	},
 ]
 
@@ -79,6 +133,33 @@ let germanSwearWords = [
 		},
 		correct: 'c',
 	},
+	{	
+		question: 'Arschgeige',
+		answers: {
+			a: 'piece of shit',
+			b: 'pee hole dandruf',
+			c: 'ass violin', // correct
+		},
+		correct: 'c',
+	},
+	{	
+		question: 'dummkopf',
+		answers: {
+			a: 'burn in hell',
+			b: 'shithead', // correct
+			c: 'asshole',
+		},
+		correct: 'b',
+	},
+	{	
+		question: 'mongo',
+		answers: {
+			a: 'dumbass', // correct
+			b: 'wanker',
+			c: 'fucker',
+		},
+		correct: 'a',
+	},
 ]
 
 // chinese quiz array 
@@ -100,6 +181,33 @@ let chineseSwearWords = [
 			c: 'fuck your ancestors to an innumerable generation', // correct
 		},
 		correct: 'c',
+	},
+	{	
+		question: 'gǔn dàn',
+		answers: {
+			a: 'go to hell',
+			b: 'piss off', // correct
+			c: 'fuck you',
+		},
+		correct: 'b',
+	},
+	{	
+		question: 'gàn?',
+		answers: {
+			a: 'fuck', // correct
+			b: 'shit',
+			c: 'crap',
+		},
+		correct: 'a',
+	},
+	{	
+		question: 'lājī',
+		answers: {
+			a: 'trash', // correct
+			b: 'a rolling egg',
+			c: 'bastard',
+		},
+		correct: 'a',
 	},
 ]
 
@@ -154,7 +262,7 @@ let nextQuestion = function(swearWords) {
 
 		currentQuestion += 1
 
-		if (currentQuestion === 2) {
+		if (currentQuestion === 5) {
 			document.querySelector('.learn-to-swear').innerHTML = 'Quiz Over'
 		} else {
 			quiz(swearWords)
