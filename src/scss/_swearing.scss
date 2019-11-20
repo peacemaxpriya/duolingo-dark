@@ -1,70 +1,110 @@
+.swearing-owl {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+
+	span {
+		position: absolute;
+		top: 7%;
+		right: 50%;
+		border: 2px solid #fff;
+		border-radius: 30px;
+		padding: 10px 15px;
+		margin: 0 0 0 40px;
+		color: #fff;
+		font-family: 'Chelsea Market', sans-serif; 
+		font-size: 0.8em;
+		line-height: 1.4em;
+		text-align: end;
+
+		@media screen and (min-width: 768px) {
+			top: 2%;
+			right: 25%;
+		}
+
+		@media screen and (min-width: 1024px) {
+			top: 0;
+			font-size: 1em;
+		}
+	}
+}
+
 .learn-to-swear {
 	width: 90%;
 	margin: 40px auto;
 	font-family: 'Chelsea Market', cursive;
 	color: #fff;
 	text-align: center;
-}
 
-h2 {
-	width: 100%;
-	color: #aaa;
-	font-size: 1.4em;
-	text-align: center;
-	margin: 60px 0;
-}
-
-.options {
-	width: 100%;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-
-	button {
-		color: #000;
-		font-family: 'Chelsea Market', cursive;
-		font-size: 1em;
+	h3 {
+		position: relative;
+		width: 100%;
+		color: #aaa;
+		font-size: 1.4em;
+		line-height: 1.2em;
 		text-align: center;
-		border: 1px solid #fff;
-		border-radius: 5px;
-		padding: 15px;
-		margin: 20px 10px;
-		outline: none;
+		margin: 180px 0 30px;
 	}
 
-	button:hover {
+	.options {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+
+		button {
+			position: relative;
+			background-color: #fff;
+			color: #000;
+			font-family: 'Chelsea Market', sans-serif;
+			font-size: 1em;
+			text-align: center;
+			border: 1px solid #fff;
+			border-radius: 20px;
+			padding: 15px;
+			margin: 20px 10px;
+			outline: none;
+		}
+
+		button:hover {
+			background-color: #f29322;
+		}
+	}
+
+	.next {
+		position: relative;
+		width: fit-content;
+		background-color: #fff;
+		font-family: 'Chelsea Market', sans-serif;
+		font-size: 1em;
+		border: 1px solid #fff;
+		border-radius: 20px;
+		padding: 15px;
+		margin: 40px auto;
+		outline: none;
+		text-decoration: none;
+		color: #000;
+	}
+
+	.next:hover {
 		background-color: #f29322;
 	}
-}
 
-.next {
-	width: fit-content;
-	background-color: #fff;
-	font-family: 'Chelsea Market', cursive;
-	font-size: 1em;
-	border: 1px solid #fff;
-	border-radius: 5px;
-	padding: 15px;
-	margin: 40px auto;
-	outline: none;
-	text-decoration: none;
-	color: #000;
-}
+	@media screen and (min-width: 768px) {
+		h3 {
+			margin-top: 150px;
+		}
 
-.next:hover {
-	background-color: #f29322;
-}
+		.options {
+			flex-direction: row;
 
+			button {
+				padding: 15px 40px;
+			}
+		}
 
-@media screen and (min-width: 768px) {
-	.options {
-		flex-direction: row;
+		.next {
+			padding: 15px 40px;
+		}
 	}
 }
-
-@media screen and (min-width: 768px) {
-	.options button {
-		padding: 20px;
-	}
-}
-

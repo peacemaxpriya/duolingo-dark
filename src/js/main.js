@@ -1,5 +1,9 @@
 console.log('Hello World.')
 
+// background and other design
+
+
+
 // cookie connection
 let languageButtons = document.querySelectorAll('.language')
 languageButtons.forEach(function(languageButton) {
@@ -9,11 +13,6 @@ languageButtons.forEach(function(languageButton) {
 		document.location = 'swearing.html'
 	})
 }) 
-
-
-// hide next button until called
-let nextButton = document.querySelector('.next')
-nextButton.style.display = 'none'
 
 
 // italian quiz array
@@ -109,10 +108,13 @@ let options = document.querySelector('.options')
 let question = document.querySelector('.question')
 let currentQuestion = 0
 
-// swearing owl div
-let swearingOwl = document.createElement('div')
-document.querySelector('.learn-to-swear').appendChild(swearingOwl)
+let nextButton = document.querySelector('button.next')
+nextButton.style.display = 'none'
 
+let swearingOwl = document.querySelector('.swearing-owl span')
+swearingOwl.style.display = 'none'
+
+// functional quiz
 let quiz = function(swearWords) {
 	question.innerText = swearWords[currentQuestion].question
 	for (let option in swearWords[currentQuestion].answers) {
@@ -121,16 +123,25 @@ let quiz = function(swearWords) {
 		options.appendChild(eachOption)
 		eachOption.setAttribute('id', option)
 
-		eachOption.addEventListener('click', function() {
-			if (eachOption.id !== (swearWords[currentQuestion].correct)) {
-				eachOption.setAttribute('class', 'wrong')
-				document.querySelector('.wrong').style.backgroundColor = 'red'
+		if (eachOption.id === (swearWords[currentQuestion].correct)) {
+			eachOption.setAttribute('id', 'right')
+		} else {
+			eachOption.setAttribute('class', 'wrong')
+		}
+		
+		eachOption.addEventListener('click', function(event) {
+			if (event.target === document.querySelector('#right')) {
+				event.target.style.backgroundColor = 'green'
 			} else {
-				eachOption.setAttribute('id', 'right')
-				document.querySelector('#right').style.backgroundColor = 'green'
-			}
+				event.target.style.backgroundColor = 'red'
+				swearingOwl.style.display = 'block'
+				swearingOwl.innerText = 'It\'s ' + document.querySelector('#right').innerText + ', you idiot.'
+			}	
+			document.querySelector('button:nth-child(1)').disabled = true
+			document.querySelector('button:nth-child(2)').disabled = true
+			document.querySelector('button:nth-child(3)').disabled = true
 			nextButton.style.display = 'block'
-			nextButton.style.backgroundColor = '#fff'
+			nextButton.disabled = false
 		})
 	}
 }
@@ -138,6 +149,7 @@ let quiz = function(swearWords) {
 // go to the next question
 let nextQuestion = function(swearWords) {
 	nextButton.addEventListener('click', function() {
+		swearingOwl.style.display = 'none'
 		options.innerHTML = ' '
 
 		currentQuestion += 1
@@ -165,15 +177,3 @@ if (document.cookie.includes('language=italian')) {
 	quiz(chineseSwearWords)
 	nextQuestion(chineseSwearWords)	
 } 
-
-
-
-
-
-
-
-
-
-
-
-
