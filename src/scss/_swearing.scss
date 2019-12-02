@@ -5,8 +5,8 @@
 
 	span {
 		position: absolute;
-		top: 18%;
-		right: 50%;
+		top: 23%;
+		right: 65%;
 		border: 2px solid #fff;
 		border-radius: 30px;
 		padding: 10px 15px;
@@ -18,12 +18,12 @@
 		text-align: end;
 
 		@media screen and (min-width: 768px) {
-			top: 2%;
-			right: 25%;
+			top: 23%;
+			right: 30%;
 		}
 
 		@media screen and (min-width: 1024px) {
-			top: 0;
+			right: 25%;
 			font-size: 1em;
 		}
 	}
