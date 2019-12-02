@@ -168,4 +168,203 @@
 	}				
 }
 
+.inside-pages-stars {
+	padding: 102%;
+	position: fixed;
+
+	.star1 {
+		width: 10px;
+		position: fixed;
+		top: 50%;
+		left: 7%;
+		transform: translate(-50%, -50%);
+		opacity: 1;
+		animation: fade 6s infinite;
+
+		@keyframes fade {
+			0%, 100% { opacity: 0 }
+			50% { opacity: 1 }
+		}
+	}	
+
+	.star2 {
+		width: 10px;
+		position: fixed;
+		top: 90%;
+		left: 8%;
+		transform: translate(-50%, -50%);
+		opacity: 1;
+		animation: fade 4s infinite;
+
+		@keyframes fade {
+			0%, 100% { opacity: 0 }
+			50% { opacity: 1 }
+		}
+	}	
+
+	.star3 {
+		width: 10px;
+		position: fixed;
+		top: 32%;
+		left: 22%;
+		transform: translate(-50%, -50%);
+		opacity: 1;
+		animation: fade 3s infinite;
+
+		@keyframes fade {
+			0%, 100% { opacity: 0 }
+			50% { opacity: 1 }
+		}
+	}	
+
+	.star4 {
+		width: 10px;
+		position: fixed;
+		top: 70%;
+		left: 21%;
+		transform: translate(-50%, -50%);
+		opacity: 1;
+		animation: fade 6s infinite;
+
+		@keyframes fade {
+			0%, 100% { opacity: 0 }
+			50% { opacity: 1 }
+		}
+	}	
+
+	.star5 {
+		width: 10px;
+		position: fixed;
+		top: 93%;
+		left: 36%;
+		transform: translate(-50%, -50%);
+		opacity: 1;
+		animation: fade 4s infinite;
+
+		@keyframes fade {
+			0%, 100% { opacity: 0 }
+			50% { opacity: 1 }
+		}
+	}	
+
+	.star6 {
+		width: 10px;
+		position: fixed;
+		top: 25%;
+		left: 40%;
+		transform: translate(-50%, -50%);
+		opacity: 1;
+		animation: fade 2s infinite;
+
+		@keyframes fade {
+			0%, 100% { opacity: 0 }
+			50% { opacity: 1 }
+		}
+	}	
+
+	.star7 {
+		width: 10px;
+		position: fixed;
+		top: 10%;
+		left: 52%;
+		transform: translate(-50%, -50%);
+		opacity: 1;
+		animation: fade 6s infinite;
+
+		@keyframes fade {
+			0%, 100% { opacity: 0 }
+			50% { opacity: 1 }
+		}
+	}	
+
+	.star8 {
+		width: 10px;
+		position: fixed;
+		top: 34%;
+		left: 62%;
+		transform: translate(-50%, -50%);
+		opacity: 1;
+		animation: fade 4s infinite;
+
+		@keyframes fade {
+			0%, 100% { opacity: 0 }
+			50% { opacity: 1 }
+		}
+	}	
+
+	.star9 {
+		width: 10px;
+		position: fixed;
+		top: 12%;
+		left: 73%;
+		transform: translate(-50%, -50%);
+		opacity: 1;
+		animation: fade 3s infinite;
+
+		@keyframes fade {
+			0%, 100% { opacity: 0 }
+			50% { opacity: 1 }
+		}
+	}
+
+	.star10 {
+		width: 10px;
+		position: fixed;
+		top: 52%;
+		left: 77%;
+		transform: translate(-50%, -50%);
+		opacity: 1;
+		animation: fade 5s infinite;
+
+		@keyframes fade {
+			0%, 100% { opacity: 0 }
+			50% { opacity: 1 }
+		}
+	}		
+
+	.star11 {
+		width: 10px;
+		position: fixed;
+		top: 75%;
+		left: 51%;
+		transform: translate(-50%, -50%);
+		opacity: 1;
+		animation: fade 2s infinite;
+
+		@keyframes fade {
+			0%, 100% { opacity: 0 }
+			50% { opacity: 1 }
+		}
+	}			
+	.star12 {
+		width: 10px;
+		position: fixed;
+		top: 89%;
+		left: 67%;
+		transform: translate(-50%, -50%);
+		opacity: 1;
+		animation: fade 6s infinite;
+
+		@keyframes fade {
+			0%, 100% { opacity: 0 }
+			50% { opacity: 1 }
+		}
+	}				
+	.star13 {
+		width: 10px;
+		position: fixed;
+		top: 80%;
+		left: 84%;
+		transform: translate(-50%, -50%);
+		opacity: 1;
+		animation: fade 4s infinite;
+
+		@keyframes fade {
+			0%, 100% { opacity: 0 }
+			50% { opacity: 1 }
+		}
+	}					
+}
+
+
 

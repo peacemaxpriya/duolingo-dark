@@ -1,170 +1,566 @@
 .owl {
-	position: fixed;
-	width: 100%;
-	height: 100%;
-
-	img {
-		width: 175px;
-		position: absolute;
-		top: 60%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-	}
-
-	img.owl-on-tree {
-		width: 90px;
-		position: absolute;
-		top: 31.5%;
-		left: 60%;
-		transform: translate(-50%, -50%);
-	}
-
-	@media screen and (min-width: 768px) {
-		img {
-			width: 200px;
-			left: 47%;
-		}
-
-		img.owl-on-tree {
-			left: 80%;
-		}
-	}
-
-	@media screen and (min-width: 1024px) {
-		img.owl-on-tree {
-			width: 125px;
-			top: 29.2%;
-		}
-	}
-
-
-
-	/*.body {
-		position: fixed;
-		width: 80px;
-		top: 64%;
-		left: 52%;
-		transform: translate(-50%, -50%);
-	}
-
 	.left-leg {
-		position: fixed;
-		width: 35px;
-		top: 70%;
-		left: 48%;
+		position: absolute;
+		width: 18px;
+		top: 159px;
+		left: 76px;
 		transform: translate(-50%, -50%);
 	}
 
 	.right-leg {
-		position: fixed;
-		width: 74px;
-		top: 64%;
-		left: 52%;
+		position: absolute;
+		width: 18px;
+		top: 160px;
+		left: 97px;
+		transform: translate(-50%, -50%);
+	}
+
+	.body {
+		position: absolute;
+		width: 70px;
+		top: 117px;
+		left: 89px;
 		transform: translate(-50%, -50%);
 	}
 
 	.feathers {
-		position: fixed;
-		width: 74px;
-		top: 64%;
-		left: 52%;
+		position: absolute;
+		width: 28px;
+		top: 140px;
+		left: 89px;
 		transform: translate(-50%, -50%);
 	}
 
 	.left-wing {
-		position: fixed;
-		width: 75px;
-		top: 0%;
-		left: 52%;
+		position: absolute;
+		width: 35px;
+		top: 124px;
+		left: 57px;
 		transform: translate(-50%, -50%);
 	}
 
 	.right-wing {
-		position: fixed;
-		width: 75px;
-		top: 0%;
-		left: 52%;
+		position: absolute;
+		width: 35px;
+		top: 124px;
+		left: 121px;
 		transform: translate(-50%, -50%);
 	}
 
-	.upper-beak {
-		position: fixed;
-		width: 75px;
-		top: 0%;
-		left: 52%;
+	.eye-left-feather {
+		position: absolute;
+		width: 19px;
+		top: 80px;
+		left: 64px;
+		transform: rotate(5deg);
+	}
+
+	.eye-right-feather {
+		position: absolute;
+		width: 19px;
+		top: 80px;
+		left: 95px;
+		transform: rotate(-5deg);
+	}
+
+	.eye-outer {
+		position: absolute;
+		width: 65px;
+		top: 104px;
+		left: 89px;
 		transform: translate(-50%, -50%);
 	}
 
 	.lower-beak {
-		position: fixed;
-		width: 75px;
-		top: 0%;
-		left: 52%;
+		position: absolute;
+		width: 9px;
+		top: 115px;
+		left: 89px;
 		transform: translate(-50%, -50%);
 	}
 
-	.left-outer-eye {
-		position: fixed;
-		width: 75px;
-		top: 0%;
-		left: 52%;
+	.upper-beak {
+		position: absolute;
+		width: 13px;
+		top: 110px;
+		left: 89px;
 		transform: translate(-50%, -50%);
 	}
 
-	.left-eye {
-		position: fixed;
-		width: 75px;
-		top: 0%;
-		left: 52%;
+	.left-eye-base {
+		position: absolute;
+		width: 19px;
+		top: 104px;
+		left: 71px;
+		transform: translate(-50%, -50%);
+	}
+
+	.left-eye-inner {
+		position: absolute;
+		width: 10px;
+		top: 105px;
+		left: 73px;
+		transform: translate(-50%, -50%);
+	}
+
+	.right-eye-base {
+		position: absolute;
+		width: 19px;
+		top: 105px;
+		left: 107px;
+		transform: translate(-50%, -50%);
+	}
+
+	.right-eye-inner {
+		position: absolute;
+		width: 10px;
+		top: 105px;
+		left: 105px;
 		transform: translate(-50%, -50%);
 	}
 
 	.left-eyeball {
-		position: fixed;
-		width: 75px;
-		top: 0%;
-		left: 52%;
-		transform: translate(-50%, -50%);
-	}
-
-	.left-eyebrow {
-		position: fixed;
-		width: 75px;
-		top: 0%;
-		left: 52%;
-		transform: translate(-50%, -50%);
-	}
-
-	.right-outer-eye {
-		position: fixed;
-		width: 75px;
-		top: 0%;
-		left: 52%;
-		transform: translate(-50%, -50%);
-	}
-
-	.right-eye {
-		position: fixed;
-		width: 75px;
-		top: 0%;
-		left: 52%;
+		position: absolute;
+		width: 5px;
+		top: 105px;
+		left: 73px;
 		transform: translate(-50%, -50%);
 	}
 
 	.right-eyeball {
-		position: fixed;
-		width: 75px;
-		top: 0%;
-		left: 52%;
+		position: absolute;
+		width: 5px;
+		top: 105px;
+		left: 105px;
 		transform: translate(-50%, -50%);
 	}
 
-	.right-eyebrow {
-		position: fixed;
-		width: 75px;
-		top: 0%;
-		left: 52%;
-		transform: translate(-50%, -50%);
-	}*/
+	@media screen and (min-width: 768px) {		
+		.left-leg {
+			position: absolute;
+			width: 24px;
+			top: 119px;
+			left: 148px;
+			transform: translate(-50%, -50%);
+		}
 
-}
+		.right-leg {
+			position: absolute;
+			width: 24px;
+			top: 119px;
+			left: 178px;
+			transform: translate(-50%, -50%);
+		}
+
+		.body {
+			position: absolute;
+			width: 95px;
+			top: 60px;
+			left: 164px;
+			transform: translate(-50%, -50%);
+		}
+
+		.feathers {
+			position: absolute;
+			width: 40px;
+			top: 88px;
+			left: 164px;
+			transform: translate(-50%, -50%);
+		}
+
+		.left-wing {
+			position: absolute;
+			width: 47px;
+			top: 75px;
+			left: 119px;
+			transform: translate(-50%, -50%);
+		}
+
+		.right-wing {
+			position: absolute;
+			width: 47px;
+			top: 75px;
+			left: 210px;
+			transform: translate(-50%, -50%);
+		}
+
+		.eye-left-feather {
+			position: absolute;
+			width: 25px;
+			top: 8px;
+			left: 129px;
+			transform: rotate(4deg);
+		}
+
+		.eye-right-feather {
+			position: absolute;
+			width: 25px;
+			top: 8px;
+			left: 174px;
+			transform: rotate(-4deg);
+		}
+
+		.eye-outer {
+			position: absolute;
+			width: 89px;
+			top: 42px;
+			left: 164px;
+			transform: translate(-50%, -50%);
+		}
+
+		.lower-beak {
+			position: absolute;
+			width: 15px;
+			top: 60px;
+			left: 164px;
+			transform: translate(-50%, -50%);
+		}
+
+		.upper-beak {
+			position: absolute;
+			width: 19px;
+			top: 53px;
+			left: 164px;
+			transform: translate(-50%, -50%);
+		}
+
+		.left-eye-base {
+			position: absolute;
+			width: 25px;
+			top: 42px;
+			left: 139px;
+			transform: translate(-50%, -50%);
+		}
+
+		.left-eye-inner {
+			position: absolute;
+			width: 11px;
+			top: 42px;
+			left: 141px;
+			transform: translate(-50%, -50%);
+		}
+
+		.right-eye-base {
+			position: absolute;
+			width: 25px;
+			top: 42px;
+			left: 190px;
+			transform: translate(-50%, -50%);
+		}
+
+		.right-eye-inner {
+			position: absolute;
+			width: 11px;
+			top: 42px;
+			left: 186px;
+			transform: translate(-50%, -50%);
+		}
+
+		.left-eyeball {
+			position: absolute;
+			width: 6px;
+			top: 37px;
+			left: 139px;
+			transform: translate(-50%, -50%);
+		}
+
+		.right-eyeball {
+			position: absolute;
+			width: 6px;
+			top: 37px;
+			left: 184px;
+			transform: translate(-50%, -50%);
+		}
+	}	
+}	
+
+.inside-pages-owl {
+
+	.branch {
+		position: absolute;
+		width: 350px;
+		top: 85px;
+		transform: translate(-50%, -50%);
+	}
+
+	.left-leg {
+		position: absolute;
+		width: 18px;
+		top: 159px;
+		left: 76px;
+		transform: translate(-50%, -50%);
+	}
+
+	.right-leg {
+		position: absolute;
+		width: 18px;
+		top: 159px;
+		left: 99px;
+		transform: translate(-50%, -50%);
+	}
+
+	.body {
+		position: absolute;
+		width: 70px;
+		top: 117px;
+		left: 89px;
+		transform: translate(-50%, -50%);
+	}
+
+	.feathers {
+		position: absolute;
+		width: 28px;
+		top: 140px;
+		left: 89px;
+		transform: translate(-50%, -50%);
+	}
+
+	.left-wing {
+		position: absolute;
+		width: 35px;
+		top: 124px;
+		left: 57px;
+		transform: translate(-50%, -50%);
+	}
+
+	.right-wing {
+		position: absolute;
+		width: 35px;
+		top: 124px;
+		left: 121px;
+		transform: translate(-50%, -50%);
+	}
+
+	.eye-left-feather {
+		position: absolute;
+		width: 19px;
+		top: 80px;
+		left: 64px;
+		transform: rotate(5deg);
+	}
+
+	.eye-right-feather {
+		position: absolute;
+		width: 19px;
+		top: 80px;
+		left: 95px;
+		transform: rotate(-5deg);
+	}
+
+	.eye-outer {
+		position: absolute;
+		width: 65px;
+		top: 104px;
+		left: 89px;
+		transform: translate(-50%, -50%);
+	}
+
+	.lower-beak {
+		position: absolute;
+		width: 9px;
+		top: 115px;
+		left: 89px;
+		transform: translate(-50%, -50%);
+	}
+
+	.upper-beak {
+		position: absolute;
+		width: 13px;
+		top: 110px;
+		left: 89px;
+		transform: translate(-50%, -50%);
+	}
+
+	.left-eye-base {
+		position: absolute;
+		width: 19px;
+		top: 104px;
+		left: 71px;
+		transform: translate(-50%, -50%);
+	}
+
+	.left-eye-inner {
+		position: absolute;
+		width: 10px;
+		top: 105px;
+		left: 73px;
+		transform: translate(-50%, -50%);
+	}
+
+	.right-eye-base {
+		position: absolute;
+		width: 19px;
+		top: 105px;
+		left: 107px;
+		transform: translate(-50%, -50%);
+	}
+
+	.right-eye-inner {
+		position: absolute;
+		width: 10px;
+		top: 105px;
+		left: 105px;
+		transform: translate(-50%, -50%);
+	}
+
+	.left-eyeball {
+		position: absolute;
+		width: 5px;
+		top: 105px;
+		left: 73px;
+		transform: translate(-50%, -50%);
+	}
+
+	.right-eyeball {
+		position: absolute;
+		width: 5px;
+		top: 105px;
+		left: 105px;
+		transform: translate(-50%, -50%);
+	}
+
+	@media screen and (min-width: 768px) {		
+		.branch {
+			position: absolute;
+			width: 350px;
+			top: 50px;
+			transform: translate(-50%, -50%);
+		}
+
+		.left-leg {
+			position: absolute;
+			width: 24px;
+			top: 119px;
+			left: 98px;
+			transform: translate(-50%, -50%);
+		}
+
+		.right-leg {
+			position: absolute;
+			width: 24px;
+			top: 119px;
+			left: 127px;
+			transform: translate(-50%, -50%);
+		}
+
+		.body {
+			position: absolute;
+			width: 95px;
+			top: 60px;
+			left: 114px;
+			transform: translate(-50%, -50%);
+		}
+
+		.feathers {
+			position: absolute;
+			width: 40px;
+			top: 88px;
+			left: 114px;
+			transform: translate(-50%, -50%);
+		}
+
+		.left-wing {
+			position: absolute;
+			width: 47px;
+			top: 75px;
+			left: 69px;
+			transform: translate(-50%, -50%);
+		}
+
+		.right-wing {
+			position: absolute;
+			width: 47px;
+			top: 75px;
+			left: 160px;
+			transform: translate(-50%, -50%);
+		}
+
+		.eye-left-feather {
+			position: absolute;
+			width: 25px;
+			top: 8px;
+			left: 79px;
+			transform: rotate(4deg);
+		}
+
+		.eye-right-feather {
+			position: absolute;
+			width: 25px;
+			top: 8px;
+			left: 124px;
+			transform: rotate(-4deg);
+		}
+
+		.eye-outer {
+			position: absolute;
+			width: 89px;
+			top: 42px;
+			left: 114px;
+			transform: translate(-50%, -50%);
+		}
+
+		.lower-beak {
+			position: absolute;
+			width: 15px;
+			top: 60px;
+			left: 114px;
+			transform: translate(-50%, -50%);
+		}
+
+		.upper-beak {
+			position: absolute;
+			width: 19px;
+			top: 53px;
+			left: 114px;
+			transform: translate(-50%, -50%);
+		}
+
+		.left-eye-base {
+			position: absolute;
+			width: 25px;
+			top: 42px;
+			left: 89px;
+			transform: translate(-50%, -50%);
+		}
+
+		.left-eye-inner {
+			position: absolute;
+			width: 11px;
+			top: 42px;
+			left: 91px;
+			transform: translate(-50%, -50%);
+		}
+
+		.right-eye-base {
+			position: absolute;
+			width: 25px;
+			top: 42px;
+			left: 140px;
+			transform: translate(-50%, -50%);
+		}
+
+		.right-eye-inner {
+			position: absolute;
+			width: 11px;
+			top: 42px;
+			left: 136px;
+			transform: translate(-50%, -50%);
+		}
+
+		.left-eyeball {
+			position: absolute;
+			width: 6px;
+			top: 37px;
+			left: 89px;
+			transform: translate(-50%, -50%);
+		}
+
+		.right-eyeball {
+			position: absolute;
+			width: 6px;
+			top: 37px;
+			left: 134px;
+			transform: translate(-50%, -50%);
+		}
+	}	
+}	

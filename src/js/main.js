@@ -3,7 +3,6 @@ console.log('Hello World.')
 // background and other design
 
 
-
 // cookie connection
 let languageButtons = document.querySelectorAll('.language')
 languageButtons.forEach(function(languageButton) {
@@ -242,6 +241,7 @@ let quiz = function(swearWords) {
 				event.target.style.backgroundColor = 'green'
 			} else {
 				event.target.style.backgroundColor = 'red'
+				// document.querySelector('.inside-pages-owl').setAttribute('id', 'owl-animate')
 				swearingOwl.style.display = 'block'
 				swearingOwl.innerText = 'It\'s ' + document.querySelector('#right').innerText + ', you idiot.'
 			}	
