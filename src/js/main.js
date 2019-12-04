@@ -292,22 +292,22 @@ if (document.cookie.includes('language=italian')) {
 	quiz(italianSwearWords)
 	nextQuestion(italianSwearWords)
 	document.querySelector('.cert').setAttribute('src', 'dist/img/certificates/italian-cert.png')
-	document.querySelector('.cert-to-share').setAttribute('content', 'https://peacemaxpriya.github.io/duolingo-dark/dist/img/certificates/italian-cert.png')
+	// document.querySelector('.cert-to-share').setAttribute('content', 'https://peacemaxpriya.github.io/duolingo-dark/dist/img/certificates/italian-cert.png')
 } else if (document.cookie.includes('language=japanese')) {
 	quiz(japaneseSwearWords)
 	nextQuestion(japaneseSwearWords)
 	document.querySelector('.cert').setAttribute('src', 'dist/img/certificates/japanese-cert.png')
-	document.querySelector('.cert-to-share').setAttribute('content', 'https://peacemaxpriya.github.io/duolingo-dark/dist/img/certificates/japanese-cert.png')	
+	// document.querySelector('.cert-to-share').setAttribute('content', 'https://peacemaxpriya.github.io/duolingo-dark/dist/img/certificates/japanese-cert.png')	
 } else if (document.cookie.includes('language=german')) {
 	quiz(germanSwearWords)
 	nextQuestion(germanSwearWords)
 	document.querySelector('.cert').setAttribute('src', 'dist/img/certificates/german-cert.png')
-	document.querySelector('.cert-to-share').setAttribute('content', 'https://peacemaxpriya.github.io/duolingo-dark/dist/img/certificates/german-cert.png')	
+	// document.querySelector('.cert-to-share').setAttribute('content', 'https://peacemaxpriya.github.io/duolingo-dark/dist/img/certificates/german-cert.png')	
 } else if (document.cookie.includes('language=chinese')) {
 	quiz(chineseSwearWords)
 	nextQuestion(chineseSwearWords)	
 	document.querySelector('.cert').setAttribute('src', 'dist/img/certificates/chinese-cert.png')
-	document.querySelector('.cert-to-share').setAttribute('content', 'https://peacemaxpriya.github.io/duolingo-dark/dist/img/certificates/chinese-cert.png')
+	// document.querySelector('.cert-to-share').setAttribute('content', 'https://peacemaxpriya.github.io/duolingo-dark/dist/img/certificates/chinese-cert.png')
 } 
 
 
