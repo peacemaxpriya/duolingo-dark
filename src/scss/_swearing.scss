@@ -117,12 +117,11 @@
 		width: 300px;
 	}
 	
-	#share-buttons img {
-		width: 60px;
+	.fb-share-button {
+		width: 85px;
+		height: 40px;
 		margin-top: 490px;
 		padding: 5px;
-		border: 0;
-		box-shadow: 0;
 	}
 
 	@media screen and (min-width: 768px) {
