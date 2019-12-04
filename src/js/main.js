@@ -1,8 +1,5 @@
 console.log('Hello World.')
 
-// background and other design
-
-
 // cookie connection
 let languageButtons = document.querySelectorAll('.language')
 languageButtons.forEach(function(languageButton) {
@@ -12,7 +9,6 @@ languageButtons.forEach(function(languageButton) {
 		document.location = 'swearing.html'
 	})
 }) 
-
 
 // italian quiz array
 let italianSwearWords = [
@@ -221,9 +217,22 @@ nextButton.style.display = 'none'
 let swearingOwl = document.querySelector('.swearing-owl span')
 swearingOwl.style.display = 'none'
 
+let happyOwl = function() {
+	document.querySelector('.inside-pages-owl').setAttribute('id', 'owl-happy')
+}
+
+let disappointedOwl = function() {
+	document.querySelector('.inside-pages-owl').setAttribute('id', 'owl-disappointed')
+	swearingOwl.style.display = 'block'
+	swearingOwl.innerText = 'It\'s ' + document.querySelector('#right').innerText + ', you idiot.'
+}
+
 // functional quiz
 let quiz = function(swearWords) {
 	question.innerText = swearWords[currentQuestion].question
+	document.querySelector('.inside-pages-owl').removeAttribute('id', 'owl-disappointed')
+	document.querySelector('.inside-pages-owl').removeAttribute('id', 'owl-happy')
+	
 	for (let option in swearWords[currentQuestion].answers) {
 		let eachOption = document.createElement('button')
 		eachOption.innerText = swearWords[currentQuestion].answers[option]
@@ -239,11 +248,10 @@ let quiz = function(swearWords) {
 		eachOption.addEventListener('click', function(event) {
 			if (event.target === document.querySelector('#right')) {
 				event.target.style.backgroundColor = 'green'
+				setTimeout(happyOwl, 500)
 			} else {
 				event.target.style.backgroundColor = 'red'
-				// document.querySelector('.inside-pages-owl').setAttribute('id', 'owl-animate')
-				swearingOwl.style.display = 'block'
-				swearingOwl.innerText = 'It\'s ' + document.querySelector('#right').innerText + ', you idiot.'
+				setTimeout(disappointedOwl, 500)
 			}	
 			document.querySelector('button:nth-child(1)').disabled = true
 			document.querySelector('button:nth-child(2)').disabled = true
@@ -263,7 +271,9 @@ let nextQuestion = function(swearWords) {
 		currentQuestion += 1
 
 		if (currentQuestion === 5) {
-			document.querySelector('.learn-to-swear').innerHTML = 'Quiz Over'
+			document.querySelector('.certificate').style.display = 'flex'
+			document.querySelector('.another-language').style.display = 'block'
+			document.querySelector('.learn-to-swear').style.display = 'none'
 		} else {
 			quiz(swearWords)
 		}
@@ -271,17 +281,34 @@ let nextQuestion = function(swearWords) {
 	})
 }
 
+// certificate page 
+let certificateToShare = document.createElement('meta')
+certificateToShare.setAttribute('property', 'og:image')
+certificateToShare.setAttribute('content', ' ')
+document.querySelector('head').appendChild(certificateToShare)
+
 // get the quiz to start and go to the next question
 if (document.cookie.includes('language=italian')) {
 	quiz(italianSwearWords)
 	nextQuestion(italianSwearWords)
+	document.querySelector('.cert').setAttribute('src', 'dist/img/certificates/italian-cert.png')
+	document.querySelector('.cert-to-share').setAttribute('content', 'dist/img/certificates/italian-cert.png')
 } else if (document.cookie.includes('language=japanese')) {
 	quiz(japaneseSwearWords)
-	nextQuestion(japaneseSwearWords)	
+	nextQuestion(japaneseSwearWords)
+	document.querySelector('.cert').setAttribute('src', 'dist/img/certificates/japanese-cert.png')
+	document.querySelector('.cert-to-share').setAttribute('content', 'dist/img/certificates/japanese-cert.png')	
 } else if (document.cookie.includes('language=german')) {
 	quiz(germanSwearWords)
-	nextQuestion(germanSwearWords)	
+	nextQuestion(germanSwearWords)
+	document.querySelector('.cert').setAttribute('src', 'dist/img/certificates/german-cert.png')
+	document.querySelector('.cert-to-share').setAttribute('content', 'dist/img/certificates/german-cert.png')	
 } else if (document.cookie.includes('language=chinese')) {
 	quiz(chineseSwearWords)
 	nextQuestion(chineseSwearWords)	
+	document.querySelector('.cert').setAttribute('src', 'dist/img/certificates/chinese-cert.png')
+	document.querySelector('.cert-to-share').setAttribute('content', 'dist/img/certificates/chinese-cert.png')
 } 
+
+
+

@@ -1,0 +1,287 @@
+#owl-disappointed {
+	.left-wing {
+		animation: js-wrong-left-wing 2s 1;
+
+		@keyframes js-wrong-left-wing {
+			0%, 100% { transform: rotate(0deg); top: 102px; left: 38px; }
+			50%, 90% { transform: rotate(-20deg); top: 102px; left: 45px; }
+		}
+	}
+
+	.right-wing {
+		animation: js-wrong-right-wing 2s 1;
+
+		@keyframes js-wrong-right-wing {
+			0%, 100% { transform: rotate(0deg); top: 102px; left: 105px; }
+			50%, 90% { transform: rotate(20deg); top: 102px; left: 98px; }
+		}
+	}
+
+	.upper-beak {
+		animation: js-wrong-upper-beak 0.8s 2;
+
+		@keyframes js-wrong-upper-beak {
+			0%, 100% { top: 110px; }
+			50% { top: 108px; }
+		}
+	}
+
+	.lower-beak {
+		animation: js-wrong-lower-beak 0.8s 2;
+
+		@keyframes js-wrong-lower-beak {
+			0%, 100% { top: 115px; }
+			50% { top: 117px; }
+		}
+	}
+
+	.left-eyeball {
+		animation: js-wrong-left-eyeball 1s 1;
+
+		@keyframes js-wrong-left-eyeball {
+			0%, 40%, 100% { top: 105px; left: 73px; }
+			50% { top: 106px; left: 71px; }
+			60% { top: 103px; left: 72px; }
+			65% { top: 102px; left: 72px; }
+			70% { top: 100px; left: 73px; }
+			75% { top: 102px; left: 74px; }
+			80% { top: 103px; left: 74px; }
+			90% { top: 106px; left: 75px; }
+		}
+	}
+
+	.right-eyeball {
+		animation: js-wrong-right-eyeball 1s 1;
+
+		@keyframes js-wrong-right-eyeball {
+			0%, 40%, 100% { top: 105px; left: 105px; }
+			50% { top: 106px; left: 103px; }
+			60% { top: 103px; left: 104px; }
+			65% { top: 102px; left: 104px; }
+			70% { top: 100px; left: 105px; }
+			75% { top: 102px; left: 106px; }
+			80% { top: 103px; left: 106px; }
+			90% { top: 106px; left: 107px; }
+		}
+	}
+
+	.left-top-frown {
+		animation: js-wrong-left-top-frown 2s 1;
+
+		@keyframes js-wrong-left-top-frown {
+			0%, 100% { transform: rotate(-198deg); top: 78px; }
+			50%, 90% { transform: rotate(-198deg); top: 88px; }
+		}
+	}
+
+	.left-bottom-frown {
+		animation: js-wrong-left-bottom-frown 2s 1;
+
+		@keyframes js-wrong-left-bottom-frown {
+			0%, 100% { transform: rotate(-18deg); top: 115px; }
+			50%, 90% { transform: rotate(-18deg); top: 102px; }
+		}
+	}
+
+	.right-top-frown {
+		animation: js-wrong-right-top-frown 2s 1;
+
+		@keyframes js-wrong-right-top-frown {
+			0%, 100% { transform: rotate(206deg); top: 78px; }
+			50%, 90% { transform: rotate(206deg); top: 88px; }
+		}
+	}
+
+	.right-bottom-frown {
+		animation: js-wrong-right-bottom-frown 2s 1;
+
+		@keyframes js-wrong-right-bottom-frown {
+			0%, 100% { transform: rotate(26deg); top: 117px; }
+			50%, 90% { transform: rotate(26deg); top: 101.4px; }
+		}
+	}
+
+	@media screen and (min-width: 768px) {
+		.left-wing {
+			animation: js-wrong-tab-left-wing 2s 1;
+
+			@keyframes js-wrong-tab-left-wing {
+				0%, 100% { transform: rotate(0deg); top: 45px; left: 47px; }
+				50%, 90% { transform: rotate(-20deg); left: 52px;}
+			}
+		}
+
+		.right-wing {
+			animation: js-wrong-tab-right-wing 2s 1;
+
+			@keyframes js-wrong-tab-right-wing {
+				0%, 100% { transform: rotate(0deg); top: 45px; left: 137px; }
+				50%, 90% { transform: rotate(20deg); left: 129px;}
+			}
+		}
+
+		.upper-beak {
+			animation: js-wrong-tab-upper-beak 0.8s 2;
+
+			@keyframes js-wrong-tab-upper-beak {
+				0%, 100% { top: 53px; }
+				50% { top: 51px; }
+			}
+		}
+
+		.lower-beak {
+			animation: js-wrong-tab-lower-beak 0.8s 2;
+
+			@keyframes js-wrong-tab-lower-beak {
+				0%, 100% { top: 60px; }
+				50% { top: 62px; }
+			}
+		}
+
+		.left-eyeball {
+			animation: js-wrong-tab-left-eyeball 1s 1;
+
+			@keyframes js-wrong-tab-left-eyeball {
+				0%, 40%, 100% { top: 42px; left: 91px; }
+				50% { top: 43px; left: 89px; }
+				60% { top: 40px; left: 90px; }
+				65% { top: 39px; left: 90px; }
+				70% { top: 37px; left: 91px; }
+				75% { top: 39px; left: 92px; }
+				80% { top: 40px; left: 92px; }
+				90% { top: 43px; left: 93px; }
+			}
+		}
+
+		.right-eyeball {
+			animation: js-wrong-tab-right-eyeball 1s 1;
+
+			@keyframes js-wrong-tab-right-eyeball {
+				0%, 40%, 100% { top: 42px; left: 136px; }
+				50% { top: 43px; left: 134px; }
+				60% { top: 40px; left: 135px; }
+				65% { top: 39px; left: 135px; }
+				70% { top: 37px; left: 136px; }
+				75% { top: 39px; left: 137px; }
+				80% { top: 40px; left: 137px; }
+				90% { top: 43px; left: 138px; }
+			}
+		}
+
+		.left-top-frown {
+			animation: js-wrong-tab-left-top-frown 2s 1;
+
+			@keyframes js-wrong-tab-left-top-frown {
+				0%, 100% { transform: rotate(-198deg); top: 10px; left: 75px; }
+				50%, 90% { transform: rotate(-198deg); top: 24px; left: 75px; }
+			}
+		}
+
+		.left-bottom-frown {
+			animation: js-wrong-tab-left-bottom-frown 2s 1;
+
+			@keyframes js-wrong-tab-left-bottom-frown {
+				0%, 100% { transform: rotate(-18deg); top: 56px; left: 76px; }
+				50%, 90% { transform: rotate(-18deg); top: 41px; left: 76px; }
+			}
+		}
+
+		.right-top-frown {
+			animation: js-wrong-tab-right-top-frown 2s 1;
+
+			@keyframes js-wrong-tab-right-top-frown {
+				0%, 100% { transform: rotate(206deg); top: 10px; left: 125px; }
+				50%, 90% { transform: rotate(206deg); top: 24px; left: 125px; }
+			}
+		}
+
+		.right-bottom-frown {
+			animation: js-wrong-tab-right-bottom-frown 2s 1;
+
+			@keyframes js-wrong-tab-right-bottom-frown {
+				0%, 100% { transform: rotate(26deg); top: 54px; left: 124px; }
+				50%, 90% { transform: rotate(26deg); top: 40px; left: 124px; }
+			}	
+		}
+	}
+}
+
+#owl-happy {
+	.left-wing {
+		animation: js-right-left-wing 0.5s 1;
+
+		@keyframes js-right-left-wing {
+			0%, 100% { transform: rotate(0deg); top: 102px; left: 38px; }
+			10%, 30%, 50%, 70%, 90% { transform: rotate(90deg); top: 102px; left: 45px; }
+			20%, 40%, 60%, 80% { transform: rotate(45deg); top: 102px; left: 45px; }
+		}
+	}
+
+	.right-wing {
+		animation: js-right-right-wing 0.5s 1;
+
+		@keyframes js-right-right-wing {
+			0%, 100% { transform: rotate(0deg); top: 102px; left: 105px; }
+			10%, 30%, 50%, 70%, 90% { transform: rotate(-90deg); top: 102px; left: 98px; }
+			20%, 40%, 60%, 80% { transform: rotate(-45deg); top: 102px; left: 98px; }
+		}
+	}
+
+	.left-bottom-frown {
+		animation: js-right-left-bottom-frown 0.8s 1;
+
+		@keyframes js-right-left-bottom-frown {
+			0%, 100% { transform: rotate(0deg); top: 115px; }
+			50%, 90% { transform: rotate(0deg); top: 102px; }
+		}
+	}
+
+	.right-bottom-frown {
+		animation: js-right-right-bottom-frown 0.8s 1;
+
+		@keyframes js-right-right-bottom-frown {
+			0%, 100% { transform: rotate(0deg); top: 117px; }
+			50%, 90% { transform: rotate(0deg); top: 101.4px; }
+		}
+	}
+
+	@media screen and (min-width: 768px) {
+		.left-wing {
+			animation: js-right-tab-left-wing 0.5s 1;
+
+			@keyframes js-right-tab-left-wing {
+				0%, 100% { transform: rotate(0deg); top: 45px; left: 47px; }
+				10%, 30%, 50%, 70%, 90% { transform: rotate(90deg); top: 45px; left: 54px; }
+				20%, 40%, 60%, 80% { transform: rotate(45deg); top: 45px; left: 54px; }
+			}
+		}
+
+		.right-wing {
+			animation: js-right-tab-right-wing 0.5s 1;
+
+			@keyframes js-right-tab-right-wing {
+				0%, 100% { transform: rotate(0deg); top: 45px; left: 137px; }
+				10%, 30%, 50%, 70%, 90% { transform: rotate(-90deg); top: 45px; left: 130px; }
+				20%, 40%, 60%, 80% { transform: rotate(-45deg); top: 45px; left: 130px; }
+			}
+		}
+
+		.left-bottom-frown {
+			animation: js-right-tab-left-bottom-frown 0.8s 1;
+
+			@keyframes js-right-tab-left-bottom-frown {
+				0%, 100% { transform: rotate(0deg); top: 56px; left: 76px; }
+				50%, 90% { transform: rotate(0deg); top: 41px; left: 76px; }
+			}
+		}
+
+		.right-bottom-frown {
+			animation: js-right-tab-right-bottom-frown 0.8s 1;
+
+			@keyframes js-right-tab-right-bottom-frown {
+				0%, 100% { transform: rotate(0deg); top: 54px; left: 124px; }
+				50%, 90% { transform: rotate(0deg); top: 40px; left: 124px; }
+			}	
+		}
+	}
+}

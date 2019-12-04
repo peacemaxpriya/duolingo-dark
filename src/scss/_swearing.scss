@@ -5,7 +5,7 @@
 
 	span {
 		position: absolute;
-		top: 23%;
+		top: 145px;
 		right: 65%;
 		border: 2px solid #fff;
 		border-radius: 30px;
@@ -18,7 +18,7 @@
 		text-align: end;
 
 		@media screen and (min-width: 768px) {
-			top: 23%;
+			top: 138px;
 			right: 30%;
 		}
 
@@ -27,27 +27,16 @@
 			font-size: 1em;
 		}
 	}
-
-	.big-bubble {
-		top: 26%;
-		right: 52%;
-
-	}
-
-	.small-bubble {
-		top: 28.5%;
-		padding: 7px 10px;
-	}
 }
 
 .learn-to-swear {
 	position: absolute;
-	width: 100%;
+	width: -webkit-fill-available;
 	margin: 0 auto;
 	font-family: 'Chelsea Market', cursive;
 	color: #fff;
 	text-align: center;
-	margin: 360px 10px 20px 10px;
+	margin: 300px 10px 60px 10px;
 
 	h3 {
 		position: relative;
@@ -75,7 +64,7 @@
 			border: 1px solid #fff;
 			border-radius: 20px;
 			padding: 15px;
-			margin: 10px 30px;
+			margin: 10px 15px;
 			outline: none;
 		}
 
@@ -114,6 +103,71 @@
 
 		.next {
 			padding: 15px 40px;
+		}
+	}
+}
+
+.certificate {
+	display: none;
+	justify-content: center;
+
+	.cert {
+		position: absolute;
+		margin-top: 275px;
+		width: 300px;
+	}
+	
+	#share-buttons img {
+		width: 60px;
+		margin-top: 490px;
+		padding: 5px;
+		border: 0;
+		box-shadow: 0;
+	}
+
+	@media screen and (min-width: 768px) {
+		.cert {
+			margin-top: 250px;
+			width: 350px;
+		}
+
+		#share-buttons img {
+			margin-top: 500px;
+		}
+	}
+
+	@media screen and (min-width: 1024px) {
+		.cert {
+			margin-top: 225px;
+			width: 400px;
+		}
+	}
+}
+
+.another-language {
+	display: none;
+	position: fixed;
+	top: 90%;
+	width: 66%;
+	margin: 0 17%;
+	text-decoration: none;
+	text-align: center;
+	
+	span {
+		background-color: #fff;
+		font-family: 'Chelsea Market', sans-serif;
+		font-size: 0.8em;
+		text-transform: lowercase;
+		border: 1px solid #fff;
+		border-radius: 20px;
+		padding: 15px;
+		outline: none;
+		color: #000;	
+	}
+
+	@media screen and (min-width: 768px) {
+		span {
+			font-size: 1em;
 		}
 	}
 }
