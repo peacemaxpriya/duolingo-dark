@@ -13,7 +13,8 @@
 	}
 
 	.language-options {
-		margin-top: 380px;
+		width: 100%;
+		margin-top: 340px;
 		position: absolute;
 		
 		h2 {
@@ -26,13 +27,15 @@
 		}
 
 		ul {
-			margin: 80px auto;
 			display: flex;
-			flex-wrap: nowrap;
-			overflow-y: hidden;
+			flex-wrap: wrap;
+			width: 80%;
+			margin: 0 auto;
+			padding-top: 80px;
 
 			li {
-				margin: 0 15px;
+				margin-bottom: 40px;
+				flex-basis: 50%;
 
 				a {
 					display: flex;
@@ -75,7 +78,7 @@
 
 			ul {
 				width: 60%;
-				margin-top: 250px;
+				padding-top: 180px;
 
 				li {
 					flex-basis: 25%;
@@ -90,7 +93,9 @@
 
 	@media screen and (min-width: 1024px) {
 		.language-options {
-			width: 100%;
+			ul {
+				width: 50%;
+			}
 		}
 	}	
 }
