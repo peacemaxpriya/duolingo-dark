@@ -13,7 +13,7 @@ languageButtons.forEach(function(languageButton) {
 // italian quiz array
 let italianSwearWords = [
 	{
-		question: 'I hope you mangia merde e morte!',
+		question: 'mangia merde e morte',
 		answers: {
 			a: 'eat shit and die', // correct
 			b: 'break your bones',
@@ -22,7 +22,7 @@ let italianSwearWords = [
 		correct: 'a',
 	},
 	{	
-		question: 'Why don\'t you vaffanculo?',
+		question: 'vaffanculo',
 		answers: {
 			a: 'piss off',
 			b: 'go to hell',
@@ -31,7 +31,7 @@ let italianSwearWords = [
 		correct: 'c',
 	},
 	{	
-		question: 'Faccia di culo',
+		question: 'faccia di culo',
 		answers: {
 			a: 'your face looks like your butt', // correct
 			b: 'shut your fucking face', 
@@ -40,7 +40,7 @@ let italianSwearWords = [
 		correct: 'a',
 	},
 	{	
-		question: 'Ti corro in culo',
+		question: 'ti corro in culo',
 		answers: {
 			a: 'you\'re a shitface',
 			b: 'you look like shit',
@@ -49,7 +49,7 @@ let italianSwearWords = [
 		correct: 'c',
 	},
 	{	
-		question: 'Porco cane',
+		question: 'porco cane',
 		answers: {
 			a: 'pig\'s shit',
 			b: 'pig dog', // correct
@@ -62,7 +62,7 @@ let italianSwearWords = [
 // japanese quiz array 
 let japaneseSwearWords = [
 	{
-		question: 'Could you shi\'ne kutabare?',
+		question: 'kutabare?',
 		answers: {
 			a: 'go fuck yourself',
 			b: 'go to hell',
@@ -71,7 +71,7 @@ let japaneseSwearWords = [
 		correct: 'c',
 	},
 	{	
-		question: 'Why don\'t you damare?',
+		question: 'damare',
 		answers: {
 			a: 'dig yourself a grave',
 			b: 'shut your fucking face', // correct
@@ -80,7 +80,7 @@ let japaneseSwearWords = [
 		correct: 'b',
 	},
 	{	
-		question: 'Kuso kurae',
+		question: 'kuso kurae',
 		answers: {
 			a: 'fuck a donkey',
 			b: 'eat shit', // correct
@@ -111,7 +111,7 @@ let japaneseSwearWords = [
 // german quiz array 
 let germanSwearWords = [
 	{
-		question: 'You\'re such a drscksnest!',
+		question: 'drscksnest',
 		answers: {
 			a: 'armpit of the universe', // correct
 			b: 'pair of sweaty balls',
@@ -120,7 +120,7 @@ let germanSwearWords = [
 		correct: 'a',
 	},
 	{	
-		question: 'Stop bothering me. Verpiss dich!',
+		question: 'verpiss dich',
 		answers: {
 			a: 'die in a ditch',
 			b: 'suck a dick',
@@ -129,7 +129,7 @@ let germanSwearWords = [
 		correct: 'c',
 	},
 	{	
-		question: 'Arschgeige',
+		question: 'arschgeige',
 		answers: {
 			a: 'piece of shit',
 			b: 'pee hole dandruf',
@@ -160,7 +160,7 @@ let germanSwearWords = [
 // chinese quiz array 
 let chineseSwearWords = [
 	{
-		question: 'You can\'t be any more Èr bǎi wǔ than you already are.',
+		question: 'Èr bǎi wǔ',
 		answers: {
 			a: '420',
 			b: '250', // correct
@@ -201,6 +201,202 @@ let chineseSwearWords = [
 			a: 'trash', // correct
 			b: 'a rolling egg',
 			c: 'bastard',
+		},
+		correct: 'a',
+	},
+]
+
+// hindi quiz array 
+let hindiSwearWords = [
+	{
+		question: 'saala kutta',
+		answers: {
+			a: 'goat fucker',
+			b: 'go to hell',
+			c: 'fucking dog', // correct
+		},
+		correct: 'c',
+	},
+	{	
+		question: 'gaand mara',
+		answers: {
+			a: 'dog semen',
+			b: 'get your ass fucked', // correct
+			c: 'you\'re the result of a torn condom',
+		},
+		correct: 'b',
+	},
+	{	
+		question: 'haraami',
+		answers: {
+			a: 'pig',
+			b: 'bastard', // correct
+			c: 'loser',
+		},
+		correct: 'b',
+	},
+	{	
+		question: 'suvar',
+		answers: {
+			a: 'pig', // correct
+			b: 'shit',
+			c: 'cow',
+		},
+		correct: 'a',
+	},
+	{	
+		question: 'bhadwe',
+		answers: {
+			a: 'pimp',
+			b: 'fucker',
+			c: 'idiot', // corect
+		},
+		correct: 'c',
+	},
+]
+
+// korean quiz array 
+let koreanSwearWords = [
+	{
+		question: 'mae-ju',
+		answers: {
+			a: 'dumbfuck',
+			b: 'chicken that eats its own shit',
+			c: 'fermented soybeans that smell like shit', // correct
+		},
+		correct: 'c',
+	},
+	{	
+		question: 'shib-seh-ggii',
+		answers: {
+			a: 'fucker', // correct
+			b: 'piss off',
+			c: 'asshole',
+		},
+		correct: 'a',
+	},
+	{	
+		question: 'shi-bal',
+		answers: {
+			a: 'pig',
+			b: 'fuck', // correct
+			c: 'bastard',
+		},
+		correct: 'b',
+	},
+	{	
+		question: 'jot-gga',
+		answers: {
+			a: 'piss off', // correct
+			b: 'go die',
+			c: 'go to hell',
+		},
+		correct: 'a',
+	},
+	{	
+		question: 'mee-cheen-nom',
+		answers: {
+			a: 'headache',
+			b: 'fucking piece of shit',
+			c: 'crazy bastard', // correct
+		},
+		correct: 'c',
+	},
+]
+
+// spanish quiz array 
+let spanishSwearWords = [
+	{
+		question: 'joder',
+		answers: {
+			a: 'go die',
+			b: 'fuck', // correct
+			c: 'damn',
+		},
+		correct: 'b',
+	},
+	{	
+		question: 'hijo de puta',
+		answers: {
+			a: 'fuck off',
+			b: 'piece of shit',
+			c: 'son of a bitch', // correct
+		},
+		correct: 'c',
+	},
+	{	
+		question: 'mierda',
+		answers: {
+			a: 'shit', // correct
+			b: 'go to hell',
+			c: 'asshole',
+		},
+		correct: 'a',
+	},
+	{	
+		question: 'me cago en tus muertos',
+		answers: {
+			a: 'i shit over your dead ones', // correct
+			b: 'i\'ll kill your dog and bury it',
+			c: 'i want you dead',
+		},
+		correct: 'a',
+	},
+	{	
+		question: 'Gilipollas',
+		answers: {
+			a: 'dog fucker',
+			b: 'shithead', // correct
+			c: 'choke and die',
+		},
+		correct: 'b',
+	},
+]
+
+// french quiz array 
+let frenchSwearWords = [
+	{
+		question: 'brûle en l’enfe',
+		answers: {
+			a: 'light a candle under your ass',
+			b: 'burn in hell', // correct
+			c: 'eat stale creme brulee',
+		},
+		correct: 'b',
+	},
+	{	
+		question: 'va te faire enculer',
+		answers: {
+			a: 'idiot',
+			b: 'mind your own business',
+			c: 'go fuck yourself', // correct
+		},
+		correct: 'c',
+	},
+	{	
+		question: 'branleur',
+		answers: {
+			a: 'banana peel',
+			b: 'wanker', // correct
+			c: 'womanizer',
+		},
+		correct: 'b',
+	},
+	{	
+		question: 'putain',
+		answers: {
+			a: 'fuck', // correct
+			b: 'dickhead',
+			c: 'ugly',
+		},
+		correct: 'a',
+	},
+	{	
+		question: 'dégage',
+		answers: {
+			a: 'piss off', // correct
+			b: 'stink',
+			c: 'shit',
 		},
 		correct: 'a',
 	},
@@ -307,6 +503,26 @@ if (document.cookie.includes('language=italian')) {
 	quiz(chineseSwearWords)
 	nextQuestion(chineseSwearWords)	
 	document.querySelector('.cert').setAttribute('src', 'dist/img/certificates/chinese-cert.png')
+	// document.querySelector('.cert-to-share').setAttribute('content', 'https://peacemaxpriya.github.io/duolingo-dark/dist/img/certificates/chinese-cert.png')
+} else if (document.cookie.includes('language=hindi')) {
+	quiz(hindiSwearWords)
+	nextQuestion(hindiSwearWords)	
+	document.querySelector('.cert').setAttribute('src', 'dist/img/certificates/hindi-cert.png')
+	// document.querySelector('.cert-to-share').setAttribute('content', 'https://peacemaxpriya.github.io/duolingo-dark/dist/img/certificates/chinese-cert.png')
+} else if (document.cookie.includes('language=korean')) {
+	quiz(koreaneSwearWords)
+	nextQuestion(koreanSwearWords)	
+	document.querySelector('.cert').setAttribute('src', 'dist/img/certificates/korean-cert.png')
+	// document.querySelector('.cert-to-share').setAttribute('content', 'https://peacemaxpriya.github.io/duolingo-dark/dist/img/certificates/chinese-cert.png')
+} else if (document.cookie.includes('language=spanish')) {
+	quiz(spanishSwearWords)
+	nextQuestion(spanishSwearWords)	
+	document.querySelector('.cert').setAttribute('src', 'dist/img/certificates/spanish-cert.png')
+	// document.querySelector('.cert-to-share').setAttribute('content', 'https://peacemaxpriya.github.io/duolingo-dark/dist/img/certificates/chinese-cert.png')
+} else if (document.cookie.includes('language=french')) {
+	quiz(frenchSwearWords)
+	nextQuestion(frenchSwearWords)	
+	document.querySelector('.cert').setAttribute('src', 'dist/img/certificates/french-cert.png')
 	// document.querySelector('.cert-to-share').setAttribute('content', 'https://peacemaxpriya.github.io/duolingo-dark/dist/img/certificates/chinese-cert.png')
 } 
 
