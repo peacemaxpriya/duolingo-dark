@@ -247,11 +247,11 @@ let hindiSwearWords = [
 	{	
 		question: 'bhadwe',
 		answers: {
-			a: 'pimp',
+			a: 'pimp', // corect
 			b: 'fucker',
-			c: 'idiot', // corect
+			c: 'idiot',
 		},
-		correct: 'c',
+		correct: 'a',
 	},
 ]
 
