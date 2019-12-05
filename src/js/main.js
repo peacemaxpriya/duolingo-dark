@@ -510,7 +510,7 @@ if (document.cookie.includes('language=italian')) {
 	document.querySelector('.cert').setAttribute('src', 'dist/img/certificates/hindi-cert.png')
 	// document.querySelector('.cert-to-share').setAttribute('content', 'https://peacemaxpriya.github.io/duolingo-dark/dist/img/certificates/chinese-cert.png')
 } else if (document.cookie.includes('language=korean')) {
-	quiz(koreaneSwearWords)
+	quiz(koreanSwearWords)
 	nextQuestion(koreanSwearWords)	
 	document.querySelector('.cert').setAttribute('src', 'dist/img/certificates/korean-cert.png')
 	// document.querySelector('.cert-to-share').setAttribute('content', 'https://peacemaxpriya.github.io/duolingo-dark/dist/img/certificates/chinese-cert.png')
